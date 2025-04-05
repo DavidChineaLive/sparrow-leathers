@@ -8,7 +8,7 @@ export default function Home() {
         <nav className="space-x-4">
           <a href="#about" className="hover:underline">About</a>
           <a href="#products" className="hover:underline">Shop</a>
-          <a href="#contact" className="hover:underline">Contact</a>
+          <a href="/contact" className="hover:underline">Contact</a>
         </nav>
       </header>
 
@@ -46,7 +46,13 @@ export default function Home() {
               <p className="text-sm text-gray-600 mb-2">$16.99</p>
               <a href="#" className="text-blue-600 hover:underline">View Product</a>
             </div>
+
             {/* Add more cards as needed */}
+          </div>
+          <div className="text-center mt-8">
+            <a href="/products" className="bg-leather text-white px-6 py-3 rounded font-semibold hover:bg-opacity-90">
+              View All Products
+            </a>
           </div>
         </div>
       </section>

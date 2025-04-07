@@ -3,6 +3,8 @@
 :root {
   --background: #f9f6f1; /* soft cream */
   --foreground: #5c4033; /* rich leather brown */
+  --highlight: #e6c6a0; /* soft tan highlight */
+  --text-highlight: #4b2e1f;
 }
 
 @theme inline {
@@ -27,6 +29,17 @@ body {
   line-height: 1.6;
   font-size: 1rem;
   padding: 1rem;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  background-color: var(--highlight);
+  color: var(--text-highlight);
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
 }
 
 /* Optional tweaks for a handcrafted, minimal look */

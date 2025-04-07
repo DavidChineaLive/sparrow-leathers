@@ -1,8 +1,8 @@
 // pages/products.js
 export default function Products() {
     const products = [
-      { id: 1, name: "Classic Leather Belt", price: "$54.99", image: "/belt1.jpg" },
-      { id: 2, name: "Buffalo Leather Dog Collar", price: "$16.99", image: "/belt2.jpg" },
+      { id: 1, name: "Classic Leather Belt", price: "$54.99", image: "/belt1.jpg", route: "/product_pages/belt" },
+      { id: 2, name: "Buffalo Leather Dog Collar", price: "$16.99", image: "/belt2.jpg" , route: "/product_pages/dog-collar"},
       { id: 3, name: "Custom Leather Belt", price: "$64.99", image: "/hero.jpg" },
       { id: 4, name: "Handmade Leather Wallet", price: "$34.99", image: "/hero.jpg" },
       { id: 5, name: "Leather Keychain", price: "$9.99", image: "/hero.jpg" },
@@ -28,7 +28,11 @@ export default function Products() {
                 <img src={product.image} alt={product.name} className="mb-4 rounded" />
                 <h4 className="text-xl font-bold">{product.name}</h4>
                 <p className="text-sm text-gray-600 mb-2">{product.price}</p>
-                <a href="#" className="text-blue-600 hover:underline">View Product</a>
+                <a
+                href={product.route || "#"}
+                className="text-blue-600 hover:underline">
+                View Product
+                </a>
               </div>
             ))}
           </div>

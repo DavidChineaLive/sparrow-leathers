@@ -1,5 +1,6 @@
 // utils/imagePath.js
 export const imagePath = (filename) => `/sparrow_leathers/${filename}`;
+import ReviewCarousel from "./components/ReviewCarousel";
 
 // pages/index.js
 export default function Home() {
@@ -62,6 +63,14 @@ export default function Home() {
               View All Products
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="bg-gray-200 py-10">
+        <div className="max-w-6xl mx-auto px-4">
+          <h3 className="text-3xl font-semibold text-center mb-8">What Our Customers Say</h3>
+          <ReviewCarousel />
         </div>
       </section>
 
